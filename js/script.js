@@ -1,40 +1,37 @@
-let navbar = document.querySelector(".header .flex .navbar");
+$(document).ready(function () {
+  // function
+  function selectLocation(location) {
+    $("#jobLocationInput").val(location);
+  }
+  function selectSpecialist(location) {
+    $("#jobspecialist").val(location);
+  }
+  function selectCompany(location) {
+    $("#jobscompany").val(location);
+  }
 
-document.querySelector("#menu-btn").onclick = () => {
-  navbar.classList.toggle("active");
-};
+  // Event listener
+  $("#items-specialist").click(function () {
+    var specialist = $(this).text();
+    selectSpecialist(specialist);
+  });
 
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
+  $("#items-company").click(function () {
+    var specialist = $(this).text();
+    selectCompany(specialist);
+  });
 
-document.querySelectorAll('input[type="number"]').forEach((inputNumber) => {
-  inputNumber.oninput = () => {
-    if (inputNumber.value.length > inputNumber.maxLength)
-      inputNumber.value = inputNumber.value.slice(0, inputNumber.maxLength);
-  };
+  $("#items-location").click(function () {
+    var specialist = $(this).text();
+    selectLocation(specialist);
+  });
+
+  $(document).ready(function () {
+    $(".btn-menu").click(function (e) {
+      e.preventDefault();
+
+      // Toggle kelas aktif pada dropdown
+      $(".btn-dropdown").toggleClass("active");
+    });
+  });
 });
-
-let dropdown_items = document.querySelectorAll(
-  ".job-filter form .dropdown-container .dropdown .lists .items"
-);
-
-dropdown_items.forEach((items) => {
-  items.onclick = () => {
-    items_parent = items.parentElement.parentElement;
-    let output = items_parent.querySelector(".output");
-    output.value = items.innerText;
-  };
-});
-
-function selectLocation(location) {
-  document.getElementById("jobLocationInput").value = location;
-}
-
-function selectSpecialist(location) {
-  document.getElementById("jobspecialist").value = location;
-}
-
-function selectCompany(location) {
-  document.getElementById("jobscompany").value = location;
-}

@@ -8,14 +8,13 @@
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!--header section starts-->
 
     <header class="header">
       <section class="flex">
-        <div id="menu-btn" class="fas fa-bars-staggered"></div>
-
         <a href="index.html" class="logo"
           ><img src="images/logo.png" alt=""
         /></a>
@@ -33,8 +32,34 @@
               <p>Login</p>
               <i class="fas fa-sign-in-alt"></i></div
           ></a>
+          <a href="#" class="btn-menu" style="margin-top: 0">
+            <div class="btn-masuk-menu">
+              <p>Menu</p>
+              <i class="fas fa-bars"></i>
+            </div>
+          </a>
         </div>
       </section>
+      <a href="login.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>Login</p>
+        </div>
+      </a>
+      <a href="register.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>Register</p>
+        </div>
+      </a>
+      <a href="about.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>about us</p>
+        </div>
+      </a>
+      <a href="contact.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>contact us</p>
+        </div>
+      </a>
     </header>
 
     <!--header section ends-->
@@ -58,15 +83,8 @@
                     id="jobspecialist"
                   />
                   <div class="lists">
-                    <p
-                      class="items"
-                      onclick="selectSpecialist('Web developer')"
-                    >
-                      Web developer
-                    </p>
-                    <p class="items" onclick="selectSpecialist('Designer')">
-                      Designer
-                    </p>
+                    <p class="items" id="items-specialist">Web developer</p>
+                    <p class="items" id="items-specialist">Designer</p>
                   </div>
                 </div>
               </div>
@@ -84,12 +102,8 @@
                     id="jobscompany"
                   />
                   <div class="lists">
-                    <p class="items" onclick="selectCompany('Google')">
-                      Google
-                    </p>
-                    <p class="items" onclick="selectCompany('Facebook')">
-                      Facebook
-                    </p>
+                    <p class="items" id="items-company">Google</p>
+                    <p class="items" id="items-company">Facebook</p>
                   </div>
                 </div>
               </div>
@@ -107,9 +121,7 @@
                     id="jobLocationInput"
                   />
                   <div class="lists">
-                    <p class="items" onclick="selectLocation('Denpasar')">
-                      Denpasar
-                    </p>
+                    <p class="items" id="items-location">Denpasar</p>
                   </div>
                 </div>
               </div>
@@ -391,7 +403,9 @@
         </p>
       </div>
       <div class="info-button">
-        <button>Contact Us</button>
+        <a href="contact.html" class="btn-info" style="margin-top: 0">
+          contact us
+        </a>
       </div>
     </section>
 
@@ -444,7 +458,9 @@
             <a href="contact.html"
               ><i class="fas fa-angle-right"></i>contact us</a
             >
-            <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+            <a href="register.html"
+              ><i class="fas fa-angle-right"></i>register</a
+            >
             <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
           </div>
           <div class="box">
@@ -457,7 +473,6 @@
     </footer>
     <!--footer section ends-->
 
-    <!-- custom js file link -->
     <script src="js/script.js"></script>
   </body>
 </html>
