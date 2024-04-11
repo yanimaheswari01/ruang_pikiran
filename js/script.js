@@ -11,17 +11,17 @@ $(document).ready(function () {
   }
 
   // Event listener
-  $("#items-specialist").click(function () {
+  $(".items-specialist").click(function () {
     var specialist = $(this).text();
     selectSpecialist(specialist);
   });
 
-  $("#items-company").click(function () {
+  $(".items-company").click(function () {
     var specialist = $(this).text();
     selectCompany(specialist);
   });
 
-  $("#items-location").click(function () {
+  $(".items-location").click(function () {
     var specialist = $(this).text();
     selectLocation(specialist);
   });
@@ -30,7 +30,6 @@ $(document).ready(function () {
     $(".btn-menu").click(function (e) {
       e.preventDefault();
 
-      // Toggle kelas aktif pada dropdown
       $(".btn-dropdown").toggleClass("active");
     });
   });
