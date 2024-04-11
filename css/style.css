@@ -1226,6 +1226,26 @@ section {
     flex-direction: column;
     gap: 4rem;
   }
+
+  .about img {
+    width: 40%;
+  }
+
+  .about .box h3 {
+    font-size: 1.5rem;
+  }
+
+  .about .box p {
+    font-size: 1.3rem;
+  }
+
+  .view-1 h2 {
+    font-size: 1.4rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    color: rgba(0, 109, 255);
+  }
 }
 
 .category .box-container .box {

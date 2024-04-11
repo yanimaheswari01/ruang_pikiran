@@ -2,12 +2,15 @@ $(document).ready(function () {
   // function
   function selectLocation(location) {
     $("#jobLocationInput").val(location);
+    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
   }
   function selectSpecialist(location) {
     $("#jobspecialist").val(location);
+    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
   }
   function selectCompany(location) {
     $("#jobscompany").val(location);
+    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
   }
 
   // Event listener
