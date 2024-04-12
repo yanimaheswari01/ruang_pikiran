@@ -16,9 +16,24 @@ $(document).ready(function () {
     $(".box-data").hide();
     if (category === "all job") {
       $(".box-data").show();
-    } else if (category === "web developer") {
+    } else if (category === "marketing") {
+      $('.box-data[data-specialist="' + category + '"]').show();
+    } else if (category === "designer") {
+      $('.box-data[data-specialist="' + category + '"]').show();
+    } else if (category === "engineer") {
+      $('.box-data[data-specialist="' + category + '"]').show();
+    } else if (category === "consultant") {
+      $('.box-data[data-specialist="' + category + '"]').show();
+    } else if (category === "sales") {
       $('.box-data[data-specialist="' + category + '"]').show();
     }
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#job-list").offset().top,
+      },
+      300
+    );
   }
   function animateOnScroll() {
     $(".fade").each(function () {

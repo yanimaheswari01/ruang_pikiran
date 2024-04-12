@@ -1196,6 +1196,14 @@ section {
     display: inline-block;
   }
 
+  .box img {
+    width: 5rem;
+  }
+
+  .category .box-container .box h3 {
+    font-size: 1.2rem;
+  }
+
   .btn-register {
     display: none;
   }
