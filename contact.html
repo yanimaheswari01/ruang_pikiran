@@ -63,29 +63,29 @@
       <form action="" method="post">
         <div class="flex">
           <div class="box">
-            <p>name <span>*</span></p>
+            <p>Nama <span>*</span></p>
             <input
               type="text"
               name="name"
               required
               maxlength="20"
-              placeholder="enter your name"
+              placeholder="Masukan nama"
               class="input"
             />
           </div>
           <div class="box">
-            <p>email <span>*</span></p>
+            <p>Email <span>*</span></p>
             <input
               type="text"
               name="email"
               required
               maxlength="50"
-              placeholder="enter your email"
+              placeholder="Masukan email"
               class="input"
             />
           </div>
           <div class="box">
-            <p>number <span>*</span></p>
+            <p>No telp<span>*</span></p>
             <input
               type="number"
               name="number"
@@ -93,35 +93,34 @@
               min="0"
               max="999999999999"
               maxlength="20"
-              placeholder="enter your number"
+              placeholder="Masukan nomer telpon"
               class="input"
             />
           </div>
           <div class="box">
-            <p>role <span>*</span></p>
+            <p>Role <span>*</span></p>
             <select name="role" required class="input">
-              <option value="employee">job seeker (employee)</option>
-              <option value="employee">job provider (employeer)</option>
+              <option value="employee">Pelamar</option>
+              <option value="employee">Recruiter</option>
             </select>
           </div>
         </div>
-        <p>message <span>*</span></p>
+        <p>Pesan <span>*</span></p>
         <textarea
           name="message"
           class="input"
           required
           maxlength="1000"
-          placeholder="enter your message"
+          placeholder="Masukan pesan"
           cols="30"
           rows="10"
         ></textarea>
-        <input type="submit" value="send message" name="send" class="btn" />
+        <input type="submit" value="kirim pesan" name="send" class="btn" />
       </form>
     </section>
 
     <section class="about fade">
       <div class="box">
-        <h3>Office</h3>
         <span class="company">alamat kantor</span>
         <p>Jalan Melati No. 07, Denpasar, Bali, Indonesia</p>
         <div id="waze-map">
