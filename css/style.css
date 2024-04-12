@@ -1130,6 +1130,10 @@ section {
 }
 
 .box img {
+  width: 10rem;
+}
+
+.footer-img img {
   width: 25rem;
 }
 

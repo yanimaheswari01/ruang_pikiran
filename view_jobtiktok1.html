@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>View Job</title>
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <!--header section starts-->
+
     <header class="header">
       <section class="flex">
         <a href="index.html" class="logo"
@@ -60,58 +62,119 @@
       </a>
     </header>
 
-    <section class="about fade">
-      <div class="box">
-        <div class="account-form-container">
-          <section class="account-form">
-            <form action="" method="post">
-              <h3>create account</h3>
-              <input
-                type="text"
-                required
-                name="name"
-                maxlength="20"
-                placeholder="enter your name"
-                class="input"
-              />
-              <input
-                type="email"
-                required
-                name="email"
-                maxlength="50"
-                placeholder="enter your email"
-                class="input"
-              />
-              <input
-                type="password"
-                required
-                name="pass"
-                maxlength="20"
-                placeholder="enter your password"
-                class="input"
-              />
-              <input
-                type="password"
-                required
-                name="c_pass"
-                maxlength="20"
-                placeholder="confirm your password"
-                class="input"
-              />
-              <p>already have an account? <a href="login.html">login now</a></p>
-              <input
-                type="submit"
-                value="register now"
-                name="submit"
-                class="btn"
-              />
-            </form>
-          </section>
+    <!--header section ends-->
+
+    <!--view job section starts-->
+
+    <section class="job-details">
+      <h1 class="heading">job details</h1>
+
+      <div class="details">
+        <div class="job-info">
+          <h3>Senior Product Designer, Platform</h3>
+          <p>Tiktok</p>
+          <p><i class="fas fa-map-marker-alt"></i> San Jose</p>
         </div>
+        <div class="basic-details">
+          <h3>Gaji</h3>
+          <p>$137000 - $229500 per tahun</p>
+          <h3>Keuntungan</h3>
+          <p>Bekerja dari rumah, asuransi kesehatan</p>
+          <h3>Tipe Pekerjaan</h3>
+          <p>Part-Time</p>
+          <h3>Jadwal</h3>
+          <p>Day Shift</p>
+        </div>
+        <ul>
+          <h3>Persyaratan</h3>
+          <li>
+            Lebih dari 5 tahun mendesain UX untuk desain bisnis termasuk SaaS,
+            PaaS, dan desain web
+          </li>
+          <li>
+            Kuat dalam desain interaksi, dan secara teratur mengeksekusi
+            prototipe menggunakan alat seperti Figma
+          </li>
+          <li>
+            Keterampilan komunikasi yang baik untuk dapat mengartikulasikan
+            konsep, visi, dan pengambilan keputusan
+          </li>
+          <li>
+            Pengalaman bekerja dengan berbagai pemangku kepentingan di seluruh
+            organisasi
+          </li>
+          <li>
+            Kemampuan untuk mengulang dengan cepat dan menghasilkan banyak
+            konsep
+          </li>
+          <li>
+            Berorientasi pada hasil dan tangguh. Kemampuan untuk menyesuaikan
+            diri dengan budaya startup yang mengedepankan efisiensi dan
+            mendorong dampak
+          </li>
+          <li>
+            Kadang-kadang, bekerja secara efisien di bawah tekanan tingkat
+            tinggi dan jadwal yang menuntut
+          </li>
+        </ul>
+        <ul>
+          <h3>Kualifikasi</h3>
+          <li>
+            Pengalaman bekerja dengan sistem desain (komponen desain, ikon,
+            warna)
+          </li>
+          <li>
+            Pengalaman bekerja pada sistem B2B yang kompleks untuk memecahkan
+            masalah tingkat perusahaan tertentu di bidang profesional
+          </li>
+          <li>Familiar dengan metode pengembangan</li>
+        </ul>
+        <ul>
+          <h3>skill</h3>
+          <li>SaaS</li>
+          <li>PaaS</li>
+          <li>Desain web</li>
+        </ul>
+        <div class="description">
+          <h3>Deskripsi Pekerjaan</h3>
+          <ul>
+            <li>
+              Melaksanakan setiap tahap siklus hidup desain dengan manajer
+              produk, penulis UX, dan insinyur untuk mengirimkan pengalaman
+              produk secara global
+            </li>
+            <li>
+              Membuat alur pengguna, prototipe, dan desain dengan ketelitian
+              tinggi yang memberikan berbagai solusi berdasarkan kebutuhan
+              pengguna, tujuan bisnis, dan kendala teknis
+            </li>
+            <li>
+              Pengetahuan tentang metode kualitatif dan kuantitatif untuk
+              penelitian pengguna
+            </li>
+            <li>
+              Meninjau rilis produk secara kualitatif dan bekerja dengan tim
+              teknik dalam fase handoff melalui pra dan pasca peluncuran untuk
+              mengoptimalkan dan menguji kompatibilitas
+            </li>
+            <li>
+              Berkontribusi pada strategi peta jalan fitur, meningkatkan proses
+              desain produk, dan memperjuangkan peluang berbagi pengetahuan
+              melalui dokumentasi dan presentasi pasca-peluncuran
+            </li>
+          </ul>
+        </div>
+        <form class="flex-btn">
+          <input type="submit" value="apply now" name="apply" class="btn" />
+        </form>
       </div>
     </section>
 
-    <footer class="footer fade">
+    <!--view job section ends-->
+
+    <!--footer section starts-->
+
+    <footer class="footer">
       <section class="footer-info">
         <button>
           <i class="fab fa-whatsapp fa-lg" style="color: #ffffff"></i> Customer
@@ -140,7 +203,7 @@
         <section class="grid">
           <div class="box footer-img">
             <img src="images/logo.png" alt="" />
-            <p>Jalan Melati No. 07</p>
+            <p>Jalan Melati No.07</p>
             <p>Denpasar, Bali, Indonesia</p>
           </div>
           <div class="box">
@@ -171,7 +234,9 @@
         &copy; copyright by <span>SERLOK 2024</span>
       </div>
     </footer>
+    <!--footer section ends-->
 
+    <!-- custom js file link -->
     <script src="js/script.js"></script>
   </body>
 </html>
