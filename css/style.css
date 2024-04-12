@@ -1196,12 +1196,12 @@ section {
     display: inline-block;
   }
 
-  .box img {
+  .box-category img {
     width: 5rem;
   }
 
   .category .box-container .box h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .btn-register {
