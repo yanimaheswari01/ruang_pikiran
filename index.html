@@ -66,7 +66,7 @@
 
     <!--home section starts-->
 
-    <div class="home-container">
+    <div class="home-container fade">
       <section class="job-filter">
         <form action="" method="post">
           <div class="flex">
@@ -83,8 +83,8 @@
                     id="jobspecialist"
                   />
                   <div class="lists">
-                    <p class="items items-specialist">Web developer</p>
-                    <p class="items items-specialist">Designer</p>
+                    <p class="items items-specialist">web developer</p>
+                    <p class="items items-specialist">designer</p>
                   </div>
                 </div>
               </div>
@@ -102,8 +102,8 @@
                     id="jobscompany"
                   />
                   <div class="lists">
-                    <p class="items items-company">Google</p>
-                    <p class="items items-company">Facebook</p>
+                    <p class="items items-company">google</p>
+                    <p class="items items-company">facebook</p>
                   </div>
                 </div>
               </div>
@@ -118,10 +118,10 @@
                     placeholder="Job location"
                     maxlength="5"
                     class="output"
-                    id="jobLocationInput"
+                    id="jobslocation"
                   />
                   <div class="lists">
-                    <p class="items items-location">Denpasar</p>
+                    <p class="items items-location">denpasar</p>
                   </div>
                 </div>
               </div>
@@ -139,35 +139,21 @@
     <!--home section ends-->
 
     <!--catergory section starts-->
-    <section class="category">
+    <section class="category fade">
       <h1 class="heading">categories</h1>
 
       <div class="box-container">
-        <a href="#" class="box">
+        <a href="#" class="box box-category">
           <i class="fas fa-code"></i>
           <div>
             <h3>all job</h3>
           </div>
         </a>
 
-        <a href="#" class="box">
+        <a href="#" class="box box-category">
           <i class="fas fa-code"></i>
           <div>
-            <h3>designer</h3>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <i class="fas fa-code"></i>
-          <div>
-            <h3>teacher</h3>
-          </div>
-        </a>
-
-        <a href="#" class="box">
-          <i class="fas fa-code"></i>
-          <div>
-            <h3>marketing</h3>
+            <h3>web developer</h3>
           </div>
         </a>
       </div>
@@ -175,11 +161,16 @@
     <!--catergory section ends-->
 
     <!--job section starts-->
-    <section class="jobs-container">
+    <section class="jobs-container fade" id="job-list">
       <h1 class="heading">list jobs</h1>
 
       <div class="box-container">
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -202,7 +193,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -225,7 +221,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -248,7 +249,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -271,7 +277,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -294,7 +305,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -317,7 +333,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -340,7 +361,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -363,7 +389,12 @@
           </div>
         </div>
 
-        <div class="box">
+        <div
+          class="box box-data"
+          data-specialist="web developer"
+          data-company="google"
+          data-location="denpasar"
+        >
           <div class="company">
             <img src="images/icon-1.PNG" alt="" />
             <div>
@@ -389,7 +420,7 @@
     </section>
     <!--job section ends-->
 
-    <section class="jobs-info">
+    <section class="jobs-info fade">
       <div class="info-header">
         <h1>
           Dapatkan Kandidat <br />
@@ -411,7 +442,7 @@
 
     <!--footer section starts-->
 
-    <footer class="footer">
+    <footer class="footer fade">
       <section class="footer-info">
         <button>
           <i class="fab fa-whatsapp fa-lg" style="color: #ffffff"></i> Customer

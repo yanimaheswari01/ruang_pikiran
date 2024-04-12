@@ -272,6 +272,17 @@ section {
   justify-content: center;
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .home-container .home form {
   background-color: var(--white);
   width: 80rem;

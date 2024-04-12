@@ -1,16 +1,36 @@
 $(document).ready(function () {
   // function
   function selectLocation(location) {
-    $("#jobLocationInput").val(location);
-    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
+    $("#jobslocation").val(location);
+    $(".btn-dropdown").removeClass("active");
   }
   function selectSpecialist(location) {
     $("#jobspecialist").val(location);
-    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
+    $(".btn-dropdown").removeClass("active");
   }
   function selectCompany(location) {
     $("#jobscompany").val(location);
-    $(".btn-dropdown").removeClass("active"); // Menyembunyikan dropdown setelah memilih
+    $(".btn-dropdown").removeClass("active");
+  }
+  function filterJobs(category) {
+    $(".box-data").hide();
+    if (category === "all job") {
+      $(".box-data").show();
+    } else if (category === "web developer") {
+      $('.box-data[data-specialist="' + category + '"]').show();
+    }
+  }
+  function animateOnScroll() {
+    $(".fade").each(function () {
+      var position = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > position - windowHeight + 200) {
+        $(this).addClass("fade-in");
+      } else {
+        $(this).removeClass("fade-in");
+      }
+    });
   }
 
   // Event listener
@@ -29,11 +49,52 @@ $(document).ready(function () {
     selectLocation(specialist);
   });
 
-  $(document).ready(function () {
-    $(".btn-menu").click(function (e) {
-      e.preventDefault();
+  $(".btn-menu").click(function (e) {
+    e.preventDefault();
 
-      $(".btn-dropdown").toggleClass("active");
+    $(".btn-dropdown").toggleClass("active");
+  });
+
+  $(".btn-search").click(function () {
+    var selectedSpecialist = $("#jobspecialist").val();
+    var selectedCompany = $("#jobscompany").val();
+    var selectedLocation = $("#jobslocation").val();
+
+    $(".box-data").hide();
+
+    $(".box-data").each(function () {
+      var specialist = $(this).data("specialist");
+      var company = $(this).data("company");
+      var location = $(this).data("location");
+
+      if (
+        (selectedSpecialist === "" || selectedSpecialist === specialist) &&
+        (selectedCompany === "" || selectedCompany === company) &&
+        (selectedLocation === "" || selectedLocation === location)
+      ) {
+        $(this).show();
+      }
     });
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#job-list").offset().top,
+      },
+      300
+    );
+
+    return false;
+  });
+
+  $(".box-category").click(function (e) {
+    e.preventDefault();
+    var category = $(this).find("h3").text().toLowerCase();
+    filterJobs(category);
+  });
+
+  animateOnScroll();
+
+  $(window).scroll(function () {
+    animateOnScroll();
   });
 });
