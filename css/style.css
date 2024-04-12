@@ -1197,11 +1197,16 @@ section {
   }
 
   .box-category img {
-    width: 5rem;
+    width: 6rem;
   }
 
   .category .box-container .box h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .category .box-container .box{
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .btn-register {
