@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+          <a href="index.html" class="logo"
+            ><img src="images/logo.png" alt=""
+          /></a>
+          <div class="right_wrapper">
+            <nav class="navbar">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="konsultasi.html">Konsultasi</a>
+              <a href="psikolog.html">Psikolog</a>
+              <a href="contact.html">Contact Us</a>
+            </nav>
+            <a href="register.html" class="btn-register" style="margin-top: 0"
+              ><i class="fas fa-pencil-alt fa-lg"></i> Register</a
+            >
+            <a href="login.html" class="btn-masuk" style="margin-top: 0">
+              <div class="btn-masuk-login">
+                <p>Login</p>
+                <i class="fas fa-sign-in-alt"></i></div
+            ></a>
+            <a href="#" class="btn-menu" style="margin-top: 0">
+              <div class="btn-masuk-menu">
+                <p>Menu</p>
+                <i class="fas fa-bars"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+        <a href="login.html" class="btn-dropdown" style="margin-top: 0">
+          <div class="btn-masuk-dropdown">
+            <p>Login</p>
+          </div>
+        </a>
+        <a href="register.html" class="btn-dropdown" style="margin-top: 0">
+          <div class="btn-masuk-dropdown">
+            <p>Register</p>
+          </div>
+        </a>
+        <a href="about.html" class="btn-dropdown" style="margin-top: 0">
+          <div class="btn-masuk-dropdown">
+            <p>About Us</p>
+          </div>
+        </a>
+        <a href="contact.html" class="btn-dropdown" style="margin-top: 0">
+          <div class="btn-masuk-dropdown">
+            <p>Contact Us</p>
+          </div>
+        </a>
+        <a href="konsultasi.html" class="btn-dropdown" style="margin-top: 0">
+            <div class="btn-masuk-dropdown">
+              <p>Konsultasi</p>
+            </div>
+          </a>
+          <a href="psikolog.html" class="btn-dropdown" style="margin-top: 0">
+            <div class="btn-masuk-dropdown">
+              <p>Psikolog</p>
+            </div>
+          </a>
+      </header>
+      <h1 class="heading" style="color: purple; font-size: 5rem;">Yuk Pilih Ruangan kamu!</h1>
+      <main class="ruang fade"> 
+        
+         <div class="ruang-item">
+           <div>
+              <img src="images/ruang curhat.jfif" alt="" />
+           </div>
+           <div class="tulisan-ruang">
+               <p><b>Ruang Curhat-</b>disini kamu bisa bebas untuk menceritakan
+              semua masalah personal kamu yang sedang kamu alami kepada psikolog.
+              Tapi takut privasinya kebongkar? eitss tenang aja disini kami akan menjaga 
+              privasi kamu dengan aman. Di ruangan ini khusus untuk masalah individu ya!</p>
+             </div>
+        </div>
+        <div class="ruang-item">
+         <div>
+           <img src="images/ruang cinta.jfif" alt="" />
+         </div>
+           <div class="tulisan-ruang">
+             <p><b>Ruang Cinta-</b>disini kamu bisa banget untuk nyelesaiin
+              masalah percintaan kamu nih, jadi disini kamu bisa mencari jalan terbaik
+              untuk menyelesaikan masalah kamu sama si doi. Disini kamu bisa ngajak doi kamu
+              langsung ya, tapi jangan sampai bertengkar hihi!</p>
+           </div>
+        </div>
+        <div class="ruang-item">
+         <div>
+            <img src="images/ruang emdr.jfif" alt="" />
+         </div>
+         <div class="tulisan-ruang">
+           <p><b>Ruang EMDR-</b>disini kamu akan diterapi dengan psikolog hebat loh! keren banget bukan?
+            jadi kamu ga perlu ragu lagi untuk melakukan terapi di ruang EMDR ini karena disini psikolog akan
+            mengobati segala trauma kamu!</p>
+         </div>
+        </div>
+        <div class="ruang-item">
+         <div>
+           <img src="images/ruang anak-anak.jfif" alt="" />
+         </div>
+         <div class="tulisan-ruang">
+           <p><b>Ruang Anak-anak-</b>hah ruang anak-anak? yepss! jadi selain untuk orang dewasa
+          ataupun remaja ruang berpikir juga menyediakan untuk anak-anak loh, menarik bukan?. Jadi
+        untuk para orang tua yang merasa anaknya memiliki masalah atau trauma bisa banget nih booking ruang ini!</p>
+         </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="section-title fade"><b>Konsultasi Sekarang</b></div>
+      <section class="contact fade">
+        <form action="" method="post">
+          <div class="flex">
+            <div class="box">
+              <p>Nama <span>*</span></p>
+              <input
+                type="text"
+                name="name"
+                required
+                maxlength="20"
+                placeholder="Masukkan nama"
+                class="input"
+              />
+            </div>
+            <div class="box">
+              <p>Usia <span>*</span></p>
+              <input
+                type="text"
+                name="email"
+                required
+                maxlength="50"
+                placeholder="Masukkan email"
+                class="input"
+              />
+            </div>
+            <div class="box">
+              <p>No telp<span>*</span></p>
+              <input
+                type="number"
+                name="number"
+                required
+                min="0"
+                max="999999999999"
+                maxlength="20"
+                placeholder="Masukkan nomer telpon"
+                class="input"
+              />
+            </div>
+            <div class="box">
+              <p> Ruang yang dipilih <span>*</span></p>
+              <input
+                type="text"
+                name="ruang"
+                required
+                maxlength="50"
+                placeholder="Masukkan ruang yang dipilih"
+                class="input"
+              />
+            </div>
+          </div>
+          <div class="box">
+            <p> Jam Konsultasi <span>*</span></p>
+            <input
+              type="number"
+              name="number"
+              required
+              min="0"
+              max="999999999999"
+              maxlength="20"
+              placeholder="Masukkan Jam Konsultasi"
+              class="input"
+            />
+          </div>
+        </div>
+          <div class="box">
+          <p>Psikolog <span>*</span></p>
+          <input
+                type="text"
+                name="psikolog"
+                required
+                maxlength="100"
+                placeholder="Masukkan nama psikolog yang dipilih"
+                class="input"
+              />
+          </div>
+          <input type="submit" value="Booking" name="send" class="btn" />
+        </form>
+      </section>
+
+      <footer class="footer fade">
+        <section class="footer-info">
+          <button>
+            <i class="fab fa-whatsapp fa-lg" style="color: #ffffff"></i> Customer
+            Care
+          </button>
+          <div class="info-number">
+            <div class="data">
+              <h3>12</h3>
+              <p>Psikolog</p>
+            </div>
+            <div class="data">
+              <h3>100</h3>
+              <p>Pasien</p>
+            </div>
+            <div class="data">
+              <h3>100</h3>
+              <p>Masalah</p>
+            </div>
+            <div class="data">
+              <h3>1000</h3>
+              <p>Solusi</p>
+            </div>
+          </div>
+        </section>
+        <div class="credit">
+          <section class="grid">
+            <div class="box footer-img">
+              <img src="images/logo.png" alt="" />
+              <p>Jalan Sentanu V</p>
+              <p>Denpasar, Bali, Indonesia</p>
+            </div>
+            <div class="box">
+              <h3>follow us</h3>
+              <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+              <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+              <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+            </div>
+            <div class="box">
+              <h3>quick links</h3>
+              <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+              <a href="about.html"><i class="fas fa-angle-right"></i>about us</a>
+              <a href="contact.html"
+                ><i class="fas fa-angle-right"></i>contact us</a
+              >
+              <a href="register.html"
+                ><i class="fas fa-angle-right"></i>register</a
+              >
+              <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+            </div>
+            <div class="box">
+              <h3>download apps</h3>
+              <a href="#"><i class="fab fa-google-play fa-lg"></i>Google Play</a>
+            </div>
+          </section>
+          &copy; copyright by <span>Ruang Pikiran 2024</span>
+        </div>
+      </footer>
+  
+      <script src="js/script.js"></script>
+</body>
+</html>

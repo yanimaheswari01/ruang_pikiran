@@ -16,9 +16,11 @@
         /></a>
         <div class="right_wrapper">
           <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="about.html">about us</a>
-            <a href="contact.html">contact us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="konsultasi.html">Konsultasi</a>
+            <a href="psikolog.html">Psikolog</a>
+            <a href="contact.html">Contact Us</a>
           </nav>
           <a href="register.html" class="btn-register" style="margin-top: 0"
             ><i class="fas fa-pencil-alt fa-lg"></i> Register</a
@@ -48,12 +50,22 @@
       </a>
       <a href="about.html" class="btn-dropdown" style="margin-top: 0">
         <div class="btn-masuk-dropdown">
-          <p>about us</p>
+          <p>About Us</p>
         </div>
       </a>
       <a href="contact.html" class="btn-dropdown" style="margin-top: 0">
         <div class="btn-masuk-dropdown">
-          <p>contact us</p>
+          <p>Contact Us</p>
+        </div>
+      </a>
+      <a href="konsultasi.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>Konsultasi</p>
+        </div>
+      </a>
+      <a href="psikolog.html" class="btn-dropdown" style="margin-top: 0">
+        <div class="btn-masuk-dropdown">
+          <p>Psikolog</p>
         </div>
       </a>
     </header>
@@ -69,7 +81,7 @@
               name="name"
               required
               maxlength="20"
-              placeholder="Masukan nama"
+              placeholder="Masukkan nama"
               class="input"
             />
           </div>
@@ -80,7 +92,7 @@
               name="email"
               required
               maxlength="50"
-              placeholder="Masukan email"
+              placeholder="Masukkan email"
               class="input"
             />
           </div>
@@ -93,16 +105,22 @@
               min="0"
               max="999999999999"
               maxlength="20"
-              placeholder="Masukan nomer telpon"
+              placeholder="Masukkan nomer telpon"
               class="input"
             />
           </div>
           <div class="box">
-            <p>Role <span>*</span></p>
-            <select name="role" required class="input">
-              <option value="employee">Pelamar</option>
-              <option value="employee">Recruiter</option>
-            </select>
+            <p> Umur <span>*</span></p>
+            <input
+            type="number"
+            name="number"
+            required
+            min="0"
+            max="999999999999"
+            maxlength="20"
+            placeholder="Masukkan umur anda"
+            class="input"
+            />
           </div>
         </div>
         <p>Pesan <span>*</span></p>
@@ -118,14 +136,13 @@
         <input type="submit" value="kirim pesan" name="send" class="btn" />
       </form>
     </section>
-
     <section class="about fade">
       <div class="box">
         <span class="company">alamat kantor</span>
-        <p>Jalan Melati No. 07, Denpasar, Bali, Indonesia</p>
+        <p>Jalan Sentanu V, Denpasar, Bali, Indonesia</p>
         <div id="waze-map">
           <iframe
-            src="https://embed.waze.com/iframe?zoom=16&lat=-8.653511&lon=115.222459&pin=1"
+            src="https://embed.waze.com/iframe?zoom=17&lat=-8.606545&lon=115.218387&pin=1ct=livemap"
             width="100%"
             height="100%"
             allowfullscreen
@@ -142,20 +159,20 @@
         </button>
         <div class="info-number">
           <div class="data">
-            <h3>83</h3>
-            <p>Lowongan Aktif</p>
+            <h3>12</h3>
+            <p>Psikolog</p>
           </div>
           <div class="data">
-            <h3>167</h3>
-            <p>Job Seeker</p>
+            <h3>100</h3>
+            <p>Pasien</p>
           </div>
           <div class="data">
-            <h3>125</h3>
-            <p>Freelancers</p>
+            <h3>100</h3>
+            <p>Masalah</p>
           </div>
           <div class="data">
-            <h3>167</h3>
-            <p>Perusahaan</p>
+            <h3>1000</h3>
+            <p>Solusi</p>
           </div>
         </div>
       </section>
@@ -163,7 +180,7 @@
         <section class="grid">
           <div class="box footer-img">
             <img src="images/logo.png" alt="" />
-            <p>Jalan Melati No. 07</p>
+            <p>Jalan Sentanu V</p>
             <p>Denpasar, Bali, Indonesia</p>
           </div>
           <div class="box">
@@ -191,7 +208,7 @@
             <a href="#"><i class="fab fa-google-play fa-lg"></i>Google Play</a>
           </div>
         </section>
-        &copy; copyright by <span>SERLOK 2024</span>
+        &copy; copyright by <span>Ruang Pikiran 2024</span>
       </div>
     </footer>
 
